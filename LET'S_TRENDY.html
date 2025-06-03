@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LET'S BEAUTY</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 20px 10px;
+      overflow: hidden;
+    }
+    .header h1 {
+      float: left;
+      font-size: 36px;
+      margin: 0;
+    }
+    .header h1 a {
+      color: white;
+      text-decoration: none;
+    }
+    .nav {
+      float: right;
+      margin-top: 10px;
+    }
+    .nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+    .nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .layout {
+      overflow: hidden;
+    }
+    .left_row {
+      float: left;
+      width: 69%;
+      margin-right: 1%;
+    }
+    .right_row {
+      float: left;
+      width: 30%;
+    }
+    .card {
+      background-color: white;
+      margin-top: 15px;
+      padding: 15px;
+      overflow: hidden;
+    }
+    .card h1, .card h2 {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .item_box {
+      float: left;
+      width: 23%;
+      margin: 1%;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .item_box img {
+      width: 100%;
+      height: 200px;
+    }
+    .intro {
+      margin-top: 10px;
+    }
+    .intro ul {
+      padding: 0;
+      margin: 0;
+    }
+    .intro ul li {
+      list-style: none;
+      font-weight: bold;
+      text-align: center;
+      font-size: 14px;
+    }
+    .clear {
+      clear: both;
+    }
+    footer {
+      clear: both;
+      padding: 20px;
+      background-color: white;
+      margin-top: 30px;
+      color: #666;
+    }
+    #address, #link {
+      float: left;
+      width: 50%;
+    }
+    #link {
+      text-align: right;
+    }
+    #footer_menu {
+      padding: 0;
+    }
+    #footer_menu li {
+      list-style: none;
+      font-size: 14px;
+      margin: 4px 0;
+    }
+    #copyright {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #888;
+    }
+    #link select {
+      margin-top: 10px;
+      width: 100px;
+      font-size: 11px;
+    }
+    @media screen and (max-width: 768px) {
+      .header h1, .nav {
+        float: none;
+        text-align: center;
+      }
+      .nav a {
+        display: block;
+        margin: 5px 0;
+      }
+      .left_row, .right_row {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+      }
+      .item_box {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+      }
+      .item_box img {
+        height: auto;
+      }
+      #address, #link {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      #link select {
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1><a href="index.html">LET'S BEAUTY</a></h1>
+    <div class="nav">
+      <a href="LET'S_HEALTHY.html">LET'S HEALTHY</a>
+      <a href="LET'S_HANDSOME.html">LET'S HANDSOME</a>
+      <a href="LET'S_TRENDY.html">LET'S TRENDY</a>
+      <a href="LET'S_FASHIONABLE.html">LET'S FASHIONABLE</a>
+      <a href="LET'S_TOGETHER.html">LET'S TOGETHER</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="left_row">
+      <div class="card">
+        <h1>BEST TRENDY ITEM<br>"PERFUME"</h1>
+        <div class="item_box">
+          <h2>크리드 어벤투스</h2>
+          <img src="perfume1.jpeg">
+        </div>
+        <div class="item_box">
+          <h2>존바바토스 아티산</h2>
+          <img src="perfume2.jpg">
+        </div>
+        <div class="item_box">
+          <h2>이솝 테싯</h2>
+          <img src="perfume3.jpg">
+        </div>
+        <div class="item_box">
+          <h2>조말론 딥디크</h2>
+          <img src="perfume4.jpg">
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="card">
+        <h2>차은우'S PICK</h2>
+        <div class="item_box">
+          <img src="cha.png">
+        </div>
+        <div class="item_box">
+          <img src="cha1.png">
+          <div class="intro"><ul><li>BURBERRY AIRPOD CASE</li></ul></div>
+        </div>
+        <div class="item_box">
+          <img src="cha2.png">
+          <div class="intro"><ul><li>CARTIER WATCHES</li></ul></div>
+        </div>
+        <div class="item_box">
+          <img src="cha3.png">
+          <div class="intro"><ul><li>SECOND EYES CLW</li></ul></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div class="right_row">
+      <div class="card">
+        <h2>ITEM RANKING</h2>
+        <div class="item_box" style="float: none; width: 100%;"><img src="rank1.png" style="object-fit: contain;"></div>
+        <div class="item_box" style="float: none; width: 100%;"><img src="rank2.png" style="object-fit: contain;"></div>
+        <div class="item_box" style="float: none; width: 100%;"><img src="rank3.png" style="object-fit: contain;"></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="address">
+      <ul id="footer_menu">
+        <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+        <li>(주)LET'S HEALTHY</li>
+        <li>대표이사 : 김태현</li>
+        <li>주소 : 서울특별시 강동구 구천면로 41길 79</li>
+        <li>전화 : 010-4138-8275</li>
+        <li id="copyright">Copyright LET'S BEAUTY Company All Rights Reserved.</li>
+      </ul>
+    </div>
+    <div id="link">
+      <h3>고객센터 02-2240-1777</h3>
+      <select>
+        <option>네이버</option>
+        <option>다음</option>
+        <option>구글</option>
+      </select>
+    </div>
+    <div class="clear"></div>
+  </footer>
+</body>
+</html>

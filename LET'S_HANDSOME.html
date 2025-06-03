@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .header{
+            background-color: #333;
+            color: white;
+            overflow: hidden;
+        }
+        .header h1{
+            font-size: 50px;
+            float: left;
+            padding-left:10px ;
+        }
+        .header h1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav{
+            float: right;
+            margin-top: 70px;
+        }
+        .nav a{
+            display: inline-block;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav a:hover{
+            color:black;
+            background-color: #ddd;
+        }
+        .row{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        .wholecolumn{
+            width: 100%;
+            padding: 0 10px 0 10px;
+        }
+        .leftcolumn{
+            width: 33.3%;
+            float: left;
+            padding: 0 10px 0 10px;  
+         }
+         .middlecolumn{
+            width: 33.3%;
+            float: left;
+            padding: 0 10px 0 10px;
+         }
+        .rightcolumn{
+            width: 33.3%;
+            float: left;
+            padding:0 10px 0 10px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .card .item_box{
+            margin: 10px;
+            overflow: hidden;
+        }
+        .card .item_box .image{
+            float: left;
+            width: 30%;
+        }
+        .image img{
+            width: 100%;
+            max-height: 106.69px;
+        }
+        .card .item_box .intro{
+            float: left;
+            margin-left:5px;
+            width: 66%;
+            padding: 0;
+        }
+        .intro ul li{
+            list-style-type: none;
+            margin-bottom:10px;
+        }
+        footer{
+            padding: 20px 0 0 15px;
+            color: #666666;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #link{
+            float: right;
+        }
+        footer #footer_menu li{
+            margin-top: 2px;
+            font-size: 16px;
+        }
+        footer #copyright{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #888888;
+        }
+        footer #link h3{
+            font-size: 16px;
+            color: #333;
+        }
+        footer #link select{
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                float: none;
+                text-align: center;
+                font-size: 36px;
+            }
+
+            .nav {
+                float: none;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .nav a {
+                display: block;
+                margin: 5px auto;
+            }
+
+            .leftcolumn,
+            .middlecolumn,
+            .rightcolumn {
+                width: 100%;
+                float: none;
+                padding: 0;
+            }
+
+            .card .item_box .image {
+                float: none;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .card .item_box .intro {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .wholecolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+            footer #address,
+            footer #link {
+                float: none;
+                text-align: center;
+            }
+
+            footer #link select {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">LET'S BEAUTY</a></h1>
+        <div class="nav">
+        <a href="LET'S_HEALTHY.html">LET'S HEALTHY</a>
+        <a href="LET'S_HANDSOME.html">LET'S HANDSOME </a>
+        <a href="LET'S_TRENDY.html">LET'S TRENDY</a>
+        <a href="LET'S_FASHIONABLE.html">LET'S FASHIONABLE</a>
+        <a href="LET'S_TOGETHER.html">LET'S TOGETHER</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>FOR 건성 피부</h2>
+                <div class="item_box">
+                    <div class="image"><img src="gun1.jpg"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>파토 릴리풀 시카 부스팅 토너</li>
+                            <li>23,000원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="gun2.jpeg"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>DMCK 클린 아크 앰플</li>
+                            <li>38,700원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="gun3.jpeg"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>에스네이처 오아시스 아쿠아 수분크림</li>
+                            <li>21,760원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middlecolumn">
+            <div class="card">
+                <h2>FOR 복합 피부</h2>
+                <div class="item_box">
+                    <div class="image"><img src="bok1.jpg"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>웰라쥬 리얼 히알루로닉 100 토너</li>
+                            <li>20,000원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="bock2.png"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>키니드 히알루비타 앰플</li>
+                            <li>19,800원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="bock3.jpeg"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>메이크프렘 인테카 수딩 크림</li>
+                            <li>18,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>FOR 지성 피부</h2>
+                <div class="item_box">
+                    <div class="image"><img src="ji1.jpeg"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>라운드랩 약콩 판테놀 크림</li>
+                            <li>24,320원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="ji2.jpg"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>스킨앤랩 베리어덤 밀키 세럼</li>
+                            <li>21,600원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="ji3.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>토리든 솔리드인 세라마이드 크림</li>
+                            <li>22,400원</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="wholecolumn">
+            <div class="card">
+                <h2>여름철 피부를 위해 지켜야할 것들</h2>
+                <p>1.선크림 바르기!!<br>
+                여름철에는 강한 자외선으로 인해 피부 노화,주름,기미,색소침착이
+                발생할 수 있습니다. 그렇기 때문에 선크림으로 자외선을 차단해야 합니다.</p>
+                <p>2.쿨링 스킨 케어!!<br>
+                여름철에는 기온이 높기 때문에 쉽게 피부의 온도가 올라가 자극을 주게 됩니다.
+                냉장보관한 알로에 오이를 이용하여 피부의 열감을 낮춰주는 것도 좋은 방법입니다.
+                </p>
+                <p>3.수분 보충!!<br>
+                여름철에는 피지가 많이 분비됩니다. 이를 조절하기 위해서는 수분보충이 필수적입니다.
+                수분 토너 및 에센스를 사용하고 실내 습도를 60%로 유지하여 피부의 수분 손실을 줄여줘야 합니다.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <article id="address">
+                <ul id="footer_menu">
+                    <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                    <li>(주)LET'S HEALTHY</li>
+                    <li>대표이사 : 김태현</li>
+                    <li>주소 : 서울특별시 강동구 구천면로 41길 79</li>
+                    <li>전화 : 010-4138-8275 </li>
+                    <li id="copyright">Copyright LET'S BEAUTY Company All Rights Reserved.</li>
+                </ul>
+            </article>
+            <article id="link">
+                <h3>고객센터 02-2240-1777</h3>
+                <select>
+                    <option>네이버</option>
+                    <option>다음</option>
+                    <option>구글</option>
+                </select>
+            </article>
+        </footer>
+</body>
+</html>

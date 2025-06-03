@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: #333;
+            color: white;
+        }
+        .header h1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .header h1{
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+
+
+        .topnav a{
+            display:inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .header .log{
+            font-size: 12px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+        .columns{
+            width: 100%;
+        }
+        .column1{
+            float: left;
+            width: 33.33%;
+            height: 450px;
+            background-image: url("main1.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .overlay1{
+            position: absolute;
+            top:10%;
+            left: 5%;
+            text-align: center;
+            font-weight: bold;
+        }
+        .column2{
+            float: left;
+            width: 33.33%;
+            height: 450px;
+            background-image: url("main2.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .overlay2{
+            position: absolute;
+            top:10%;
+            left: 5%;
+            text-align: center;
+            font-weight: bold;
+        }
+        .column3{
+            float: left;
+            width: 33.33%;
+            height: 450px;
+            background-image: url("main3.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .overlay3{
+            position: absolute;
+            top:10%;
+            left: 5%;
+            text-align: center;
+            font-weight: bold;
+        }
+        footer{
+            padding: 20px 0 0 15px;
+            color: #666666;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #link{
+            float: right;
+        }
+        footer #footer_menu li{
+            margin-top: 2px;
+            font-size: 16px;
+        }
+        footer #copyright{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #888888;
+        }
+        footer #link h3{
+            font-size: 16px;
+            color: #333;
+        }
+        footer #link select{
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }
+        @media screen and (max-width: 768px) {
+            .column1, .column2, .column3 {
+                float: none;
+                width: 100%;
+                height: 250px;
+            }
+
+            .overlay1, .overlay2, .overlay3 {
+                top: 30%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                font-size: 14px;
+                color: white;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .header .log {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .topnav a {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #444;
+            }
+
+            footer #address,
+            footer #link {
+                float: none;
+                text-align: center;
+            }
+
+            footer #link select {
+                margin: 10px auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="log">로그인 | 회원가입 | 마이페이지</div>
+        <h1><a href="index.html">LET'S BEAUTY</a></h1>
+        <p>숨어있는 당신의 아름다움을 발견하세요</p>
+    <div class="topnav">
+        <a href="LET'S_HEALTHY.html">LET'S HEALTHY</a>
+        <a href="LET'S_HANDSOME.html">LET'S HANDSOME</a>
+        <a href="LET'S_TRENDY.html">LET'S TRENDY</a>
+        <a href="LET'S_FASHIONABLE.html">LET'S FASHIONABLE</a>
+        <a href="LET'S_TOGETHER.html">LET'S TOGETHER</a>
+    </div>
+    </div>
+    <div class="row">
+        <div class="columns">
+            <div class="column1">
+                <div class="overlay1">
+                    <p>INTEMPOMOOD<br>
+                    SALE UP TO 30%</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column2">
+                <div class="overlay2">
+                    <p>JOMALINE<br>
+                        1+1 EVENT</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column3">
+                <div class="overlay3">
+                    <p>SNATURE<br>
+                    SALE UP TO 50%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <article id="address">
+                <ul id="footer_menu">
+                    <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                    <li>(주)LET'S HEALTHY</li>
+                    <li>대표이사 : 김태현</li>
+                    <li>주소 : 서울특별시 강동구 구천면로 41길 79</li>
+                    <li>전화 : 010-4138-8275 </li>
+                    <li id="copyright">Copyright LET'S BEAUTY Company All Rights Reserved.</li>
+                </ul>
+            </article>
+            <article id="link">
+                <h3>고객센터 02-2240-1777</h3>
+                <select>
+                    <option>네이버</option>
+                    <option>다음</option>
+                    <option>구글</option>
+                </select>
+            </article>
+        </footer>
+    
+
+    
+</body>
+</html>

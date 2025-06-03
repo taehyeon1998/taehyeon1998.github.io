@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .header{
+            background-color: #333;
+            color: white;
+            overflow: hidden;
+        }
+        .header h1{
+            font-size: 50px;
+            float: left;
+            padding-left:10px ;
+        }
+        .header h1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav{
+            float: right;
+            margin-top: 70px;
+        }
+        .nav a{
+            display: inline-block;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav a:hover{
+            color:black;
+            background-color: #ddd;
+        }
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        .card{
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .firstcolumn{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .card .qna{
+            border: solid 1px black;
+            margin-bottom: 5px;
+        }
+        .card .qna ul li{
+            list-style: none;
+            overflow: hidden;
+        }
+        .card .qna .imo{
+            float: right;
+            margin-right: 10px;
+        }
+        .card .qna .left{
+            float: left;
+            font-size: 14px;
+        }
+        footer{
+            padding: 20px 0 0 15px;
+            color: #666666;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #link{
+            float: right;
+        }
+        footer #footer_menu li{
+            margin-top: 2px;
+            font-size: 16px;
+        }
+        footer #copyright{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #888888;
+        }
+        footer #link h3{
+            font-size: 16px;
+            color: #333;
+        }
+        footer #link select{
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                float: none;
+                text-align: center;
+                font-size: 36px;
+            }
+
+            .nav {
+                float: none;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .nav a {
+                display: block;
+                margin: 5px auto;
+            }
+
+            .firstcolumn {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .card .qna ul li {
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .card .qna .left, .card .qna .imo {
+                float: none;
+                display: block;
+                text-align: left;
+                margin: 5px 0;
+            }
+            footer #address,
+            footer #link {
+                float: none;
+                text-align: center;
+            }
+
+            footer #link select {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">LET'S BEAUTY</a></h1>
+        <div class="nav">
+        <a href="LET'S_HEALTHY.html">LET'S HEALTHY</a>
+        <a href="LET'S_HANDSOME.html">LET'S HANDSOME </a>
+        <a href="LET'S_TRENDY.html">LET'S TRENDY</a>
+        <a href="LET'S_FASHIONABLE.html">LET'S FASHIONABLE</a>
+        <a href="LET'S_TOGETHER.html">LET'S TOGETHER</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="firstcolumn">
+            <div class="card">
+                <h2>질의응답 게시판</h2>
+                <div class="qna">
+                    <ul>
+                        <li>지성비부인데 이 화장품 괜찮을까요?</li>
+                        <li><span class="left">작성자:래시포드</span>
+                            <span class="imo">♡200 &#9993;23</span> </li>
+                    </ul>
+                </div>
+                <div class="qna">
+                    <ul>
+                        <li>오늘의 착장을 평가해주세요</li>
+                        <li><span class="left">작성자:손흥민</span>
+                            <span class="imo">♡456 &#9993;88</span> </li>
+                    </ul>
+                </div>
+                <div class="qna">
+                    <ul>
+                        <li>효과적인 어깨운동 공유합니다</li>
+                        <li><span class="left">작성자:린가드</span>
+                            <span class="imo">♡365 &#9993;11</span> </li>
+                    </ul>
+                </div>
+                <div class="qna">
+                    <ul>
+                        <li>향수 추천 부탁드려요</li>
+                        <li><span class="left">작성자:지드래곤</span>
+                            <span class="imo">♡27 &#9993;97</span> </li>
+                    </ul>
+                </div>
+                <div class="qna">
+                    <ul>
+                        <li>이번 여름 트렌디 제품은 뭘까요?</li>
+                        <li><span class="left">작성자:쿠냐</span>
+                            <span class="imo">♡9 &#9993;45</span> </li>
+                    </ul>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <footer>
+            <article id="address">
+                <ul id="footer_menu">
+                    <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                    <li>(주)LET'S HEALTHY</li>
+                    <li>대표이사 : 김태현</li>
+                    <li>주소 : 서울특별시 강동구 구천면로 41길 79</li>
+                    <li>전화 : 010-4138-8275 </li>
+                    <li id="copyright">Copyright LET'S BEAUTY Company All Rights Reserved.</li>
+                </ul>
+            </article>
+            <article id="link">
+                <h3>고객센터 02-2240-1777</h3>
+                <select>
+                    <option>네이버</option>
+                    <option>다음</option>
+                    <option>구글</option>
+                </select>
+            </article>
+        </footer>
+    
+</body>
+</html>

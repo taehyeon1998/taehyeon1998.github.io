@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LET'S HEALTHY</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .header{
+            background-color: #333;
+            color: white;
+            overflow: hidden;
+        }
+        .header h1{
+            font-size: 50px;
+            float: left;
+            padding-left:10px ;
+        }
+        .header h1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav{
+            float: right;
+            margin-top: 70px;
+        }
+        .nav a{
+            display: inline-block;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav a:hover{
+            color:black;
+            background-color: #ddd;
+        }
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        .column{
+            width: 100%;
+        }
+        .column .card img{
+            width: 190px;
+            max-height: 190px;
+            margin-left: 8px;
+        }
+        .card{
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .rightcolumn .card{
+            height: 179.4px;
+        }
+        .card ul{
+            list-style-type: none;
+            overflow: hidden;
+            padding-left: 10px;
+        }
+        .card ul .buy{
+            text-decoration: underline;
+            color: blue;
+        }
+        .card ul li{
+            margin-bottom: 12px;
+        }
+        .rightcolumn .card img{
+            margin:15px 10px 10px 0;
+            float: left;
+            width: 30%;
+            height: 100px;
+            vertical-align: top;
+        }
+        .card h2{
+            margin: 0;
+            padding:0;
+        }
+        .section{
+            width: 100%;
+        }
+        .section h2{
+            margin:0;
+        }
+        .section h1{
+            display: inline; 
+        }
+        .section video{
+            margin-top: 10px;
+            object-fit: cover;
+        }
+        footer{
+            padding: 20px 0 0 15px;
+            color: #666666;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #link{
+            float: right;
+        }
+        footer #footer_menu li{
+            margin-top: 2px;
+            font-size: 16px;
+        }
+        footer #copyright{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #888888;
+        }
+        footer #link h3{
+            font-size: 16px;
+            color: #333;
+        }
+        footer #link select{
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }@media screen and (max-width: 768px) {
+            .header h1 {
+                float: none;
+                text-align: center;
+                font-size: 36px;
+            }
+
+            .nav {
+                float: none;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .nav a {
+                display: block;
+                margin: 5px auto;
+            }
+
+            .leftcolumn, .rightcolumn {
+                float: none;
+                width: 100%;
+                padding: 0;
+            }
+
+            .rightcolumn .card {
+                height: auto;
+                text-align: center;
+            }
+
+            .rightcolumn .card img {
+                float: none;
+                width: 50%;
+                height: auto;
+                margin: 10px auto;
+            }
+
+            .card ul {
+                padding-left: 0;
+            }
+
+            .card ul li {
+                text-align: center;
+            }
+
+            .section video {
+                width: 100%;
+                height: auto;
+            }
+
+            .column img {
+                width: 48%;
+                height: auto;
+                margin: 1%;
+            }
+
+            footer #address,
+            footer #link {
+                float: none;
+                text-align: center;
+            }
+
+            footer #link select {
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">LET'S BEAUTY</a></h1>
+        <div class="nav">
+        <a href="LET'S_HEALTHY.html">LET'S HEALTHY</a>
+        <a href="LET'S_HANDSOME.html">LET'S HANDSOME </a>
+        <a href="LET'S_TRENDY.html">LET'S TRENDY</a>
+        <a href="LET'S_FASHIONABLE.html">LET'S FASHIONABLE</a>
+        <a href="LET'S_TOGETHER.html">LET'S TOGETHER</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <div class="section">
+                    <h2>오늘의 운동</h2>
+                    <video width="100%" height="300px" controls autoplay muted>
+                        <source src="exercise.mp4.mp4">
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>프로틴 추천</h2>
+                <img src="protien.png">
+                <ul>
+                    <li>비에스엔 산타-6 프로틴</li>
+                    <li>82,620원</li>
+                    <li><span class="buy">구매하러가기</span></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>닭가슴살 추천</h2>
+                <img src="chicken.jpeg.png">
+                <ul>
+                    <li>득근파티 6종 혼합(30개)</li>
+                    <li>37,200원</li>
+                    <li><span class="buy">구매하러가기</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h2>여름 대비 복근 루틴</h2>
+                <img src="crunch.gif">
+                <img src="twist.gif">
+                <img src="leglaise.gif">
+                <img src="side.gif">
+                <img src="bike.gif">
+                <img src="rock.gif">
+            </div>
+        </div>
+    </div>
+    <footer>
+            <article id="address">
+                <ul id="footer_menu">
+                    <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                    <li>(주)LET'S HEALTHY</li>
+                    <li>대표이사 : 김태현</li>
+                    <li>주소 : 서울특별시 강동구 구천면로 41길 79</li>
+                    <li>전화 : 010-4138-8275 </li>
+                    <li id="copyright">Copyright LET'S BEAUTY Company All Rights Reserved.</li>
+                </ul>
+            </article>
+            <article id="link">
+                <h3>고객센터 02-2240-1777</h3>
+                <select>
+                    <option>네이버</option>
+                    <option>다음</option>
+                    <option>구글</option>
+                </select>
+            </article>
+        </footer>
+    
+    
+    
+    
+    
+
+</body>
+
+</html>

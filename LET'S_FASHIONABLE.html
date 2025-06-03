@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .header{
+            background-color: #333;
+            color: white;
+            overflow: hidden;
+        }
+        .header h1{
+            font-size: 50px;
+            float: left;
+            padding-left:10px ;
+        }
+        .header h1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav{
+            float: right;
+            margin-top: 70px;
+        }
+        .nav a{
+            display: inline-block;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav a:hover{
+            color:black;
+            background-color: #ddd;
+        }
+        .row::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        .card{
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .card::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        .firstcolumn{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .leftcolumn{
+            width: 50%;
+            float: left;
+        }
+        .rightcolumn{
+            width: 49%;
+            float: left;
+            margin-left: 13px;
+        }
+        .card .item_box{
+            margin: 10px;
+            overflow: hidden;
+            float: left;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .rightcolumn .card .item_box{
+            margin: 10px;
+            overflow: hidden;
+            float: left;
+            width: 30%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .leftcolumn .card .item_box{
+            margin: 10px;
+            overflow: hidden;
+            float: left;
+            width: 30%;
+        }
+        .leftcolumn .card .item_box .image{
+            width: 100%;
+        }
+        .leftcolumn .card .item_box .intro{
+            width: 100%;
+        }
+        .card .item_box .image{
+            width: 100%;
+            height: auto;
+        }
+        .image img{
+            width: 100%;
+            max-height: 300px;
+        }
+        .card .item_box .intro{
+            width: 100%;
+        }
+        .intro ul li{
+            list-style-type: none;
+            margin-bottom:10px;
+            margin-left: -35px;
+            text-align: center;
+            padding: 0;
+        }
+        .rightcolumn .intro ul li{
+            margin-bottom:0;
+            list-style-type: none;
+            margin-left: -35px;
+            text-align: center;
+            padding: 0;
+        }
+        .card .form{
+            text-align: right;
+        }
+        footer{
+            padding: 20px 0 0 15px;
+            color: #666666;
+        }
+        footer #address{
+            float: left;
+        }
+        footer #link{
+            float: right;
+        }
+        footer #footer_menu li{
+            margin-top: 2px;
+            font-size: 16px;
+        }
+        footer #copyright{
+            margin-top: 10px;
+            font-size: 11px;
+            color: #888888;
+        }
+        footer #link h3{
+            font-size: 16px;
+            color: #333;
+        }
+        footer #link select{
+            margin: 5px 0 0 50px;
+            width: 100px;
+            height: 18px;
+            font-size: 11px;
+        }
+        @media screen and (max-width: 768px) {
+            .nav {
+                float: none;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                float: none;
+                margin-left: 0;
+            }
+
+            .rightcolumn .card .item_box,
+            .leftcolumn .card .item_box {
+                width: 45%;
+                margin: 2.5%;
+            }
+
+            .form {
+                text-align: center;
+            }
+
+            .header h1 {
+                float: none;
+                text-align: center;
+                font-size: 36px;
+            }
+
+            .header {
+                text-align: center;
+            }
+
+            .firstcolumn .card .item_box {
+                width: 45%;
+                margin: 2.5%;
+            }
+
+            footer #address, footer #link {
+                float: none;
+                text-align: center;
+            }
+
+            footer #link select {
+                margin-left: 0;
+            }
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">LET'S BEAUTY</a></h1>
+        <div class="nav">
+        <a href="LET'S_HEALTHY.html">LET'S HEALTHY</a>
+        <a href="LET'S_HANDSOME.html">LET'S HANDSOME </a>
+        <a href="LET'S_TRENDY.html">LET'S TRENDY</a>
+        <a href="LET'S_FASHIONABLE.html">LET'S FASHIONABLE</a>
+        <a href="LET'S_TOGETHER.html">LET'S TOGETHER</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="firstcolumn">
+            <div class="card">
+                <h2>이달의 패션 아이템</h2>
+                <div class="item_box">
+                    <div class="image"><img src="monthf1.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>아디다스x송포더뮤트 컨트리OG</li>
+                            <li>292,500원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="monthf2.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>Linking Wide Denim Pants</li>
+                            <li>119,900원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="monthf3.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>데님 오버핏 반팔 셔츠</li>
+                            <li>31,920원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="monthf4.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>MLB 어센틱 보스턴 레드삭스</li>
+                            <li>53,000원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="monthf5.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>Airballon Ribbon Mini Skirt</li>
+                            <li>58,650원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>내 신체에 맞는 옷 추천</h2>
+                <form class="form">
+                    키 : <input type="text" size="4" value="173cm">&nbsp;
+                    몸무게 : <input type="text" size="4" value="60kg">&nbsp;
+                    다리길이 : <input type="text" size="4" value="100cm">&nbsp;
+                </form>
+                <div class="item_box">
+                    <div class="image"><img src="fit1.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>유즈드 워시 버뮤다 팬츠</li>
+                            <li>54,400원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="fit2.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>볼드 키 티셔츠</li>
+                            <li>43,200원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="fot3.webp"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>Oldschool Slouch backpack</li>
+                            <li>58,800원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>회원들이 뽑은 이달의 패션</h2>
+                <div class="item_box">
+                    <div class="image"><img src="user1.png"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>닉네임 : 박강녀</li>
+                            <li>♡379</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="user2.png"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>닉네임 : 2eunu_</li>
+                            <li>♡321</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item_box">
+                    <div class="image"><img src="user3.png"></div>
+                    <div class="intro">
+                        <ul>
+                            <li>닉네임 : 서쪄니</li>
+                            <li>♡288</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <article id="address">
+                <ul id="footer_menu">
+                    <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                    <li>(주)LET'S HEALTHY</li>
+                    <li>대표이사 : 김태현</li>
+                    <li>주소 : 서울특별시 강동구 구천면로 41길 79</li>
+                    <li>전화 : 010-4138-8275 </li>
+                    <li id="copyright">Copyright LET'S BEAUTY Company All Rights Reserved.</li>
+                </ul>
+            </article>
+            <article id="link">
+                <h3>고객센터 02-2240-1777</h3>
+                <select>
+                    <option>네이버</option>
+                    <option>다음</option>
+                    <option>구글</option>
+                </select>
+            </article>
+        </footer>
+    
+</body>
+</html>
